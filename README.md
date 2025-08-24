@@ -17,4 +17,21 @@ uWVConstants.hpp
 
 与delphi的编译转换,对比之后,可以找到问题所在.
 
+上传的几个压缩.zip文件,已经包含了编译成功之后.修复之后所有需要的组件库,将其,这是windows 64位版本的,
+
+将其复制到 
+
+C:\Users\Public\Documents\Embarcadero\Studio\23.0
+
+目录中. 然后在c++ builder中 导入安装对应的bpl库 即可 使用.  
+
+导入库之后, 在打开演示代码项目. 便可以使用.
+
+此组件唯一的问题
+
+在 navigate函数, 必须webview 环境完全初始化之后
+
+才正常使用,启动之后,估计要等待 10秒钟, 如果没有等待,直接navigate,得到的一片空白,没有任何网页显示.
+
+初始化时,尽量使用 WVBrowser1->DefaultURL ="https://www.google.com/";  来进行初始导航, 可以正常显示
 
