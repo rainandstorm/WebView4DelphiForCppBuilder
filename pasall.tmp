@@ -1,0 +1,5 @@
+﻿program pasall;
+uses
+  uMiniBrowser in '..\testextensions\uMiniBrowser.pas';
+begin
+end.
